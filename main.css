@@ -1275,7 +1275,6 @@ body {
     opacity: 0.5;
     width: 900px;
     height: 900px;
-    
     object-fit: contain;
     z-index: -1;
     pointer-events: none;
