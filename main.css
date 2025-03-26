@@ -13,8 +13,8 @@
 
 body {
     overflow-x: hidden;
-    max-width: 100vw;
-    max-height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     background-image: url(https://images.wallpaperscraft.ru/image/single/fon_nebo_tochki_83482_1920x1080.jpg);
     background-size: cover;
@@ -541,24 +541,24 @@ body {
 
 #container_myMade{
     position: relative;
-    transform-origin: top left; 
-    overflow: auto;
     height: auto;
-    width: 65%;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     top: 1000px;
 }
 
 .myMade {
-    position: relative;
+    
     transform-origin: top left; 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     gap: 20px;
     flex: 1 1 200px;
+    max-width: 1400px;
 }
 
 .column {
@@ -1248,8 +1248,8 @@ body {
     top: 10px;
     left: 70%;
     opacity: 1;
-    width: 900px;
-    height: 900px;
+    max-width: 100vw;   
+    max-height: 100vh; 
     
     z-index: -1;
 }
@@ -1260,49 +1260,43 @@ body {
     top: 700px;
     left: -300px;
     opacity: 70%;
-     
-    width: 900px;
-    height: 900px;
+    max-width: 90vw;   
+    max-height: 90vh; 
+    width: auto;
+    height: auto; 
     z-index: -1;
     transform: scale(-1, 1);
 }
 .logo_3 {
     display: block;
     position: absolute;
-    left: 70vh;
+    right: -400px;
     top: 150%;
     opacity: 0.5;
     width: 900px;
     height: 900px;
+    
     object-fit: contain;
     z-index: -1;
     pointer-events: none;
 }
 
-
-
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
 
 }
 
-@media (max-width: 991px){
+@media (min-width: 991px){
   .body{
     overflow: hidden;
   }
 }
 
-@media (max-width: 768px){
+@media (min-width: 768px){
     
 }
 
-@media (max-width: 567px){
-  .logo_1{
-    display: none;
-  }
-  body{
-    overflow-x: hidden;
-    width: 100vw;
-  }
+@media (min-width: 567px){
+    
 }
 
 
