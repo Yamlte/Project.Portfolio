@@ -10,13 +10,12 @@
     
 }
 
-
 body {
     overflow-x: hidden;
     min-width: 100vw;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background-image: url(https://images.wallpaperscraft.ru/image/single/fon_nebo_tochki_83482_1920x1080.jpg);
+    background-image: url(/Project.Portfolio/img/s-l1600.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
